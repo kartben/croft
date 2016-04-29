@@ -23,7 +23,7 @@ func main() {
 }
 
 func connectPublisher() (Publisher, error) {
-	publisher, err := ConnectRabbitPublisher()
+	publisher, err := ConnectHttpPublisher()
 	if err != nil {
 		return nil, err
 	}
